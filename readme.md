@@ -9,8 +9,13 @@ This is a material top app bar built using the Stencil standalone Web Component 
 
 Include the script in your project:
 
-Use the component's HTML tag wherever you want:
+```html
+<script src="https://unpkg.com/top-app-bar@0.0.1/dist/top-app-bar.js">
 ```
+
+Use the component's HTML tag wherever you want:
+
+```html
 <top-app-bar
     first-name="MyUW"
     second-name="Bucky Backup"
