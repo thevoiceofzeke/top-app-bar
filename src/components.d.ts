@@ -27,33 +27,37 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface TopAppBar {
+      'background': string;
+      'color': string;
+      'firstName': string;
+      'secondName': string;
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLTopAppBarElement extends StencilComponents.TopAppBar, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLTopAppBarElement: {
+    prototype: HTMLTopAppBarElement;
+    new (): HTMLTopAppBarElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'top-app-bar': HTMLTopAppBarElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'top-app-bar': HTMLTopAppBarElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'top-app-bar': JSXElements.TopAppBarAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface TopAppBarAttributes extends HTMLAttributes {
+      'background'?: string;
+      'color'?: string;
+      'firstName'?: string;
+      'secondName'?: string;
     }
   }
 }

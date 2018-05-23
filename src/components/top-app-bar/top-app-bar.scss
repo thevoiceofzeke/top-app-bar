@@ -1,0 +1,35 @@
+:host {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0 16px;
+    margin: 0;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+    
+    h1 {
+        font-family: Roboto, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: .005em;
+        line-height: 60px;
+        margin: 0;
+
+        .second-name {
+            font-size: 18px;
+            margin-left: 8px;
+        }
+    }
+}
