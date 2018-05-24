@@ -10,7 +10,7 @@ This is a material top app bar built using the Stencil standalone Web Component 
 Include the script in your project:
 
 ```html
-<script src="https://unpkg.com/top-app-bar@0.0.1/dist/top-app-bar.js">
+<script src="https://unpkg.com/top-app-bar@0.1.1/dist/top-app-bar.js">
 ```
 
 Use the component's HTML tag wherever you want:
@@ -23,3 +23,22 @@ Use the component's HTML tag wherever you want:
     color="white"
 >
 ```
+
+### Configuration / child components
+
+Use the named `<slot>` tags to include child components of the top-app-bar:
+
+```html
+<top-app-bar>
+    <your-navigation-drawer-component slot="navigation-drawer"></your-navigation-drawer-component>
+    <your-notifications-component slot="notifications-bell"></your-notifications-component>
+</top-app-bar>
+```
+
+**Available slots:**
+- navigation-drawer: An icon button that opens/closes the app navigation drawer
+- help-and-feedback: An icon button that displays a modal with help, feedback, and accessibility information
+- notifications-bell: An icon button that displays a list of notifications and a link to see all
+- profile-menu: An icon/avatar button that displays a menu with person-related links
+
+*Note: Child components are a WIP*
