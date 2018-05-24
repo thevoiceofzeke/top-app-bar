@@ -31,6 +31,7 @@ declare global {
       'background': string;
       'color': string;
       'firstName': string;
+      'firstNameUrl': string;
       'secondName': string;
     }
   }
@@ -57,6 +58,7 @@ declare global {
       'background'?: string;
       'color'?: string;
       'firstName'?: string;
+      'firstNameUrl'?: string;
       'secondName'?: string;
     }
   }

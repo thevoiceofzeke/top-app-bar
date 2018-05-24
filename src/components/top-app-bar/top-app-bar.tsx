@@ -13,6 +13,7 @@ export class TopAppBar {
 
     @Element() topBarElement: HTMLElement;
     @Prop() firstName: string;
+    @Prop() firstNameUrl: string;
     @Prop() secondName: string;
     @Prop() background: string;
     @Prop() color: string;
@@ -33,7 +34,9 @@ export class TopAppBar {
                 <div class='region region__navigation'>
                     <slot name='navigation-drawer' />
                     <h1>
-                        <span class='first-name'>{this.firstName}</span>
+                        <span class='first-name'>
+                            <a href={this.firstNameUrl} target='_blank' rel='noopener noreferrer'>{this.firstName}</a>
+                        </span>
                         <span class='second-name'>{this.secondName}</span>
                     </h1>
                 </div>
