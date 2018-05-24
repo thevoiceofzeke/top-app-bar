@@ -29,12 +29,20 @@ export class TopAppBar {
   
     render() {
         return (
-            <div>
-                <h1>
-                    <span class='first-name'>{this.firstName}</span>
-                    <span class='second-name'>{this.secondName}</span>
-                </h1>
-                <slot />
+            <div class='top-app-bar'>
+                <div class='region region__navigation'>
+                    <slot name='navigation-drawer' />
+                    <h1>
+                        <span class='first-name'>{this.firstName}</span>
+                        <span class='second-name'>{this.secondName}</span>
+                    </h1>
+                </div>
+                <div class='region region__flex'></div>
+                <div class='region region__icon-buttons'>
+                    <slot name='help-and-feedback' />
+                    <slot name='notifications-bell' />
+                    <slot name='profile-menu' />
+                </div>
             </div>
         );
     }
