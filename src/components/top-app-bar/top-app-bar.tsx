@@ -34,6 +34,7 @@ export class TopAppBar {
                     <span class='first-name'>{this.firstName}</span>
                     <span class='second-name'>{this.secondName}</span>
                 </h1>
+                <slot />
             </div>
         );
     }
